@@ -77,6 +77,15 @@ mysite/basePath/sound-name - The file with the specified name in your metadata
 ```sound-board-button``` | The button that triggers the event on your sound-board. Shadow this if you want to turn off effects or change your button icon. | __audioRef__: A ref to the audio file. This allows the button to play the file. __fileName__: The name of the file. That way you can register which sound was clicked in your button event. 
 |```sound-effect-list``` | The grid of all of your sounds that makes up your soundboard. | __soundEffects__: The list of metadata for all of your sounds. __soundFiles__: A list of all of your files. __includeDefaultControls__: A boolean that causes the default audio controls to be used. Useful if you override the sound-board-button to not play sounds (Defaults to false since the sound is played by the button instead). 
 
+## Functions
+soundboardButtonClick (src/functions/soundboard-button-click)
+This is the function that occurs when you click the SoundboardButton.
+Shadow this for custom effects.
+It takes 2 arguments: 
+1. The first is the name of the file that was clicked.
+2. The second is a ref to the audio element for the sound. This way you can play the sound with audio.current.play()
+
+
 ## Styling
 The theme uses theme-ui for styling, but I couldn't quite figure it out for everything. 
 The <h> elements, ```<ul>```, ```<li>``` and ```<p>``` all use the "Styled" component. You can change these by shadowing theme.ui. See the theme ui docs for more info. 
