@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-soundboard",
+  "name": "@mdarrik/gatsby-theme-soundboard",
   "version": "1.0.0",
   "description": "A Static site that serves as a soundboard. Can combine with serverless functions to create side-effects",
   "main": "index.js",
