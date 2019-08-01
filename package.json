@@ -1,0 +1,38 @@
+{
+  "name": "gatsby-theme-soundboard",
+  "version": "1.0.0",
+  "description": "A Static site that serves as a soundboard. Can combine with serverless functions to create side-effects",
+  "main": "index.js",
+  "author": "Darrik Moberg",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.42",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@emotion/styled": "^10.0.14",
+    "@mdx-js/react": "^1.1.4",
+    "gatsby-plugin-theme-ui": "^0.2.25",
+    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-transformer-yaml": "^2.2.4",
+    "theme-ui": "^0.2.25"
+  },
+  "devDependencies": {
+    "gatsby": "^2.13.45",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
