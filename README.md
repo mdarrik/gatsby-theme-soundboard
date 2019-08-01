@@ -12,7 +12,7 @@ So for instance, you could add some auth0 and integrate this with netlify functi
 To use this theme: 
 1. Install the theme
 ```
-yarn add gatsby-theme-soundboard
+yarn add @mdarrik/gatsby-theme-soundboard
 ```
 (also works with NPM)
 1. Add theme to gatsby-config
@@ -24,7 +24,7 @@ yarn add gatsby-theme-soundboard
 module.exports = {
     plugins: [
         {
-            "gatsby-theme-soundboard",
+            "@mdarrik/gatsby-theme-soundboard",
             options: {
                 soundPath: "path-to-your-sounds",
                 metadataPath: "path-to-your-YAML-files",
@@ -75,5 +75,12 @@ mysite/basePath/sound-name - The file with the specified name in your metadata
 |--- | --- | ---
 ```layout``` | Wraps the pages. Base version only used for Styling | N/A
 ```sound-board-button``` | The button that triggers the event on your sound-board. Shadow this if you want to turn off effects or change your button icon. | __audioRef__: A ref to the audio file. This allows the button to play the file. __fileName__: The name of the file. That way you can register which sound was clicked in your button event. 
-|```sound-effect-list``` | The grid of all of your sounds that makes up your soundboard. | __soundEffects__: The list of metadata for all of your sounds. __soundFiles__: A list of all of your files. __includeDefaultControls__: A boolean that causes the default audio controls to be used. Useful if you override the sound-board-button to not play sounds. 
-Defaults to false since the sound is played by the button instead. 
+|```sound-effect-list``` | The grid of all of your sounds that makes up your soundboard. | __soundEffects__: The list of metadata for all of your sounds. __soundFiles__: A list of all of your files. __includeDefaultControls__: A boolean that causes the default audio controls to be used. Useful if you override the sound-board-button to not play sounds (Defaults to false since the sound is played by the button instead). 
+
+##Styling
+The theme uses theme-ui for styling, but I couldn't quite figure it out. 
+For ease of theming, many major elements have a classname like "soundboard-element". 
+This should make theming easy if you grab the classname for the element you want. 
+
+##Demo
+To see a live version of this site, go to https://www.soundboard.darrik.dev
