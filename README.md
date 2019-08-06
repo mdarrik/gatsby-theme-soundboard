@@ -24,7 +24,7 @@ yarn add @mdarrik/gatsby-theme-soundboard
 module.exports = {
     plugins: [
         {
-            "@mdarrik/gatsby-theme-soundboard",
+            resolve: "@mdarrik/gatsby-theme-soundboard",
             options: {
                 soundPath: "path-to-your-sounds",
                 metadataPath: "path-to-your-YAML-files",
